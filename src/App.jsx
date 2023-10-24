@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
 import './App.css'
+import { Outlet } from 'react-router-dom';
 
 function App() {
 
@@ -10,7 +11,9 @@ function App() {
         <meta charSet="utf-8" />
         <title>News Portal || Home</title>
       </Helmet>
-      <div></div>
+      <div className='font-Poppins'>
+        <Outlet></Outlet>
+      </div>
     </>
   );
 }
